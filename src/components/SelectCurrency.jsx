@@ -171,7 +171,7 @@ const SelectCurrency = ({ selectedCurrency, handleCurrency }) => {
       <img
         src={`https://flagcdn.com/h40/${countryCode}.png`}
         alt="Flag"
-        className="w-8 h-8 mr-2"
+        className="w-8 h-8 object-cover"
       />
       <select
         className="outline-none bg-transparent text-white text-base md:text-lg font-medium w-full pr-8 cursor-pointer"

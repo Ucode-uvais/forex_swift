@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0 font-montserrat;
+  }
+
+  body {
+    @apply flex items-center justify-center min-h-screen leading-relaxed;
+    background: url("money.png") #82f463 no-repeat center center / cover;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+  }
+}

@@ -123,7 +123,7 @@ const ConverterForm = () => {
         <button
           type="button"
           onClick={handleReset}
-          className="w-full text-white text-lg font-semibold py-3 rounded-lg bg-green-400 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-700 transition duration-300"
+          className="w-full text-white text-lg font-semibold py-3 rounded-lg bg-green-400 hover:bg-red-700 focus:outline-none focus:ring-4 transition duration-300"
         >
           Reset
         </button>

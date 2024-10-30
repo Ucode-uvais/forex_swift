@@ -9,7 +9,7 @@ const ConverterForm = () => {
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isMobile, setIsMobile] = useState(false); // Track screen size
-
+  const [isResetting, setIsResetting] = useState(false);
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   //Handle Swap
@@ -23,6 +23,7 @@ const ConverterForm = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 640);
     };
+
     handleResize(); // Check on load
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -60,9 +61,14 @@ const ConverterForm = () => {
     }
   };
 
-  //Handle Reset
+  // Handle Reset
   const handleReset = () => {
+    setIsResetting(true); // show "Resetting" message
     setAmount(0);
+    setTimeout(() => {
+      setResult(""); // clear the result text
+      setIsResetting(false); // hide "Resetting" message after a brief delay
+    }, 500); // adjust this delay if needed
   };
 
   return (
@@ -122,7 +128,7 @@ const ConverterForm = () => {
           Reset
         </button>
         <p className="text-white text-lg font-semibold text-center mt-4 rounded-lg tracking-wide bg-opacity-20 bg-white p-3">
-          {isLoading ? "Converting..." : result}
+          {isLoading ? "Converting..." : isResetting ? "Resetting..." : result}
         </p>
       </div>
     </form>

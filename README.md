@@ -37,6 +37,10 @@
 
    npm run dev
 
+
+**Screenshot**
+![Screenshot 2024-10-30 075422](https://github.com/user-attachments/assets/2bc7147f-70e6-4ed3-99fc-95eff1df148c)
+
 **Folder Structure**
 
 ForexSwift

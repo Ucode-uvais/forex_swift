@@ -1,8 +1,63 @@
-# React + Vite
+# ForexSwift
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ForexSwift** is a currency converter application that allows users to get real-time exchange rates and convert amounts from one currency to another seamlessly. This project is built with modern web technologies, offering an intuitive user experience for all devices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-Time Exchange Rates**: Get accurate exchange rates for major global currencies.
+- **Currency Swap Functionality**: Easily swap "from" and "to" currencies with a single click.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User-Friendly Interface**: Simple, accessible design with input validation and error handling.
+
+## Tech Stack
+
+- **Frontend**: React, Tailwind CSS
+- **Icons**: Lucide React
+- **API**: Exchange Rate API (https://v6.exchangerate-api.com/)
+
+## Installation and Setup
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/ForexSwift.git
+   cd ForexSwift
+
+   ```
+
+2. **Install Dependencies**:
+
+   npm install
+
+3. **Environment Variables: Create a .env file in the project root and add your Exchange Rate API key**:
+
+   VITE_API_KEY=your_api_key
+
+4. **Run The Application**:
+
+   npm run dev
+
+**Folder Structure**
+
+ForexSwift
+│
+├── public
+│ └── index.html
+│
+├── src
+│ ├── assets # Static files and images
+│ ├── components # Reusable components (e.g., SelectCurrency)
+│ ├── App.jsx # Main app component
+│ ├── main.jsx # React entry point
+│ └── styles # Global and component styles
+│
+├── .env # Environment variables for API key
+├── tailwind.config.js # Tailwind CSS configuration
+├── postcss.config.js # PostCSS configuration
+└── README.md # Project documentation
+
+**Acknowledgments**
+
+Exchange Rate API - For providing the reliable and accurate exchange rates.
+Lucide React - For the beautiful icon set.
+React & Tailwind CSS - For making development easy and efficient.

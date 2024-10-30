@@ -12,7 +12,7 @@
 
   body {
     @apply flex items-center justify-center min-h-screen leading-relaxed;
-    background: url("money.png") #82f463 no-repeat center center / cover;
+    background: url("/public/money.png") #82f463 no-repeat center center / cover;
     background-attachment: fixed; /* Keeps the background fixed on scroll */
   }
 }

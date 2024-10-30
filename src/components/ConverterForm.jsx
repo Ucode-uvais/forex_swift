@@ -68,7 +68,7 @@ const ConverterForm = () => {
     setTimeout(() => {
       setResult(""); // clear the result text
       setIsResetting(false); // hide "Resetting" message after a brief delay
-    }, 500); // adjust this delay if needed
+    }, 50); // adjust this delay if needed
   };
 
   return (

@@ -12,7 +12,7 @@ const ConverterForm = () => {
 
   const API_KEY = import.meta.env.VITE_API_KEY;
 
-  //handle Swap
+  //Handle Swap
   const handleSwapCurrencies = () => {
     setFromCurrency(toCurrency);
     setToCurrency(fromCurrency);
